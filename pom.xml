@@ -24,6 +24,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<itext.ver>2.1.7</itext.ver>
 	</properties>
 
 	<dependencies>
@@ -37,7 +38,13 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-
+		<!-- Pdf library -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>${itext.ver}</version>
+		</dependency>
+		<!-- Pdf library -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
