@@ -10,6 +10,8 @@ import java.util.Map;
 @RestController
 @RequestMapping("report")
 public class ReportController {
+
+    @RequestMapping("PdfRevenueSummary")
     public ModelAndView showReport() {
         //dummy data
         Map<String, String> revenueData = new HashMap<String, String>();
@@ -19,5 +21,12 @@ public class ReportController {
         revenueData.put("1/23/2010", "$400,000");
         revenueData.put("1/24/2010", "$500,000");
         return new ModelAndView("PdfRevenueSummary", "revenueData", revenueData);
+    }
+
+    @RequestMapping("hello/view")
+    public String sayHelloView(){
+        Integer i = null ;
+        int a = i;
+        return "Hello View";
     }
 }
