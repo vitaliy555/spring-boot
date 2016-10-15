@@ -1,1 +1,3 @@
-<h1>Hello Page</h1>
+<body>
+<h1>Hello Page JSP</h1>
+</body>
